@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>age</title>
+</head>
+<body>
+<form name="form1">
+Enter ur date of birth:<br>
+<input type="date"name="date1">
+<button onclick="agefn()">age</button>
+<p>age is:</p>
+<p id="demo"></p>
+<script>
+function agefn()
+{
+
+var d=new Date(document.form1.date1.value);
+
+var y=d.getFullYear();
+var currdate=new Date();
+var curryear=currdate.getFullYear();
+
+var age=curryear-y;
+document.getElementById("demo").innerHTML=age;
+}
+</script>
+</form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+ <head>
+  <title>countdown</title>
+ </head>
+ <body>
+ <p>countdown</p>
+ <p id="demo"></p>
+  <input type="button"value="click me"onClick="setInterval(ctimer,1000)">
+ <script>
+ 
+ var a=prompt("Give a number",0);
+
+  function ctimer()
+ {
+     document.getElementById("demo").innerHTML=--a;
+
+ if(a==0)
+{
+  alert("time expired");
+  
+  
+}
+ 
+}
+
+
+ </script>
+ </body>
+</html>

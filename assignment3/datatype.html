@@ -1,0 +1,29 @@
+<html>
+ <head>
+   <title>datatext</title>
+  </head>
+  <body>
+   <form name="form2">
+     <input type="text"name="input1">
+     <button onclick="typedata()">click me</button>
+     <p>datatype is</p>
+     <p id="demo"></p>
+     <script>
+     function typedata()
+    {
+    
+     var tinput=document.form2.input1.value;
+     
+     var a=parseInt(tinput);
+     
+     if(isNaN(a)==false)
+     alert("integer")
+else
+alert("string");
+    }
+     </script>
+   </form>
+  
+  </body>
+  
+</html>

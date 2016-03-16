@@ -1,0 +1,30 @@
+<html>
+ <head>
+  <title>2dates</title>
+ </head>
+ <body>
+  <form name="form1">
+  <input type="text"name="text1">
+  
+  <p id="demo">
+  <button onclick="checkdate()">check me</button>
+  <script>
+function checkdate()
+{
+  var d=new Date(document.form1.text1.value);
+  var t=new Date();
+  if(d>t)
+  {
+   document.getElementById("demo").innerHTML="entered date is greater";
+  }
+  else
+  {
+   document.getElementById("demo").innerHTML="current date is greater";
+  }
+ 
+}
+  </script>   
+
+  </form>
+ </body>
+</html>

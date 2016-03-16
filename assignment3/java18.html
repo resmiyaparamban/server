@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>selection</title>
+</head>
+<body>
+<form name="form1">
+<select id="availableitem"multiple>available item
+ <option value="rice">rice</option>
+ <option value="noodles">noodles</option>
+ <option value="naan">naan</option>
+ <option value="roti">roti</option>
+</select>
+<select id="selitem"multiple>
+ <option value="chopseoy">chopseoy</option>
+ <option value="pasta">pasta</option>
+ <option value="grilled">grilled</option>
+ <option value="lasagna.geta">lasagna</option>
+</select>
+<input type="button" onclick="additem()"value="Additem">
+<input type="button" onclick="removeitem()"value="Remove">
+<script>
+var a;
+function additem()
+{
+ a=document.form1.availableitem.value;
+ var x=document.getElementById("selitem");
+ var option=document.createElement("option");
+ option.text=a;
+ x.add(option);
+}
+function removeitem()
+{
+ var y=document.getElementById("selitem");
+ y.remove(y.selectedIndex);
+}
+</script>
+</form>
+</body>
+</html>

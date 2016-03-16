@@ -1,0 +1,27 @@
+<html>
+ <head>
+  <title>add</title>
+ </head>
+ <body>
+ <form name="form1">
+ Enter first no:<br>
+ <input type="text"name="text1">
+ Enter 2nd No:
+ <input type="text"name="text2">
+ <button onclick="add2()">add</button>
+ <p>result is</p>
+ <p id="demo">
+ <script>
+ function add2()
+{
+ var num1,num2,s=0;
+ num1=document.form1.text1.value;
+ num2=document.form1.text2.value;
+ s=parseInt(num1)+parseInt(num2);
+ document.getElementById("demo").innerHTML=s;
+}
+ </script>
+ 
+ </form>
+ </body>
+</html>

@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>emailvalidation</title>
+</head>
+<body>
+<form name="form1">
+enter ur email<br>
+<input type="text"name="text1">
+<button onclick="checkme()">validate</button>
+<script>
+var pos2,ext2,ext3,l,pos1,ext1,part1,le;
+function check3()
+{
+ ext3=part1.slice(0,pos2);
+      l=ext3.length;
+      if(l<6)
+      {
+       alert("invalid");
+      }
+      else
+      {
+       alert("valid");
+      }
+}
+function check2()
+{
+ pos2=part1.indexOf("@");
+ ext2=part1.slice(pos2)
+ if(ext2=="")
+ {
+   alert("invalid");
+ }
+  else
+ {
+  check3();
+ }
+}
+function checkme()
+{
+ var email=document.form1.text1.value;
+
+ pos1=email.indexOf(".");
+ ext1=email.slice(pos1);
+ part1=email.slice(0,pos1);
+ le=ext1.length;
+ if(le<3)
+  {
+   alert("invalid")
+  }
+else
+{
+ check2();
+
+}
+}
+</script>
+</form>
+</body>
+</html>

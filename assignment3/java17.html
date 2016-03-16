@@ -1,0 +1,160 @@
+<html>
+<head>
+<title>customerreg</title>
+<style>
+.redlabel
+{
+ color:red;
+ font-size:5mm;
+ align:right;
+}
+</style>
+<script>
+var fname,fl,pl,pname,pos2,ext2,ext3,l,pos1,ext1,part1,le,email,b,h,lan1,lan2,lan3,q;
+function checklang()
+{
+ lan1=document.getElementById("lang1").checked;
+ lan2=document.getElementById("lang2").checked;
+ lan3=document.getElementById("lang3").checked;
+ if(lan1==false&&lan2==false&&lan3==false)
+{
+ document.getElementById("label7").innerHTML="please select a language";
+}
+ else
+{
+ document.getElementById("label7").innerHTML="invalid entry";
+}
+}
+function checkhobbies()
+{
+ h=document.getElementById("sel");
+ if(h.selectedIndex==0)
+ {
+ document.getElementById("label6").innerHTML="please select a hobby";
+ }
+  else
+ {
+  checklang();
+ }
+}
+function checkbutton()
+{
+ b=document.getElementById("male").checked;
+ c=document.getElementById("female").checked;
+ if(b==false&&c==false)
+{
+  document.getElementById("label5").innerHTML="please select a gender";
+}
+ else
+{ 
+ checkhobbies();
+}
+
+}
+function check3()
+{
+ ext3=part1.slice(0,pos2);
+      l=ext3.length;
+      if(l<6)
+      {
+        document.getElementById("label4").innerHTML="invalid email";
+      }
+      else
+      {
+       checkbutton();
+      }
+}
+function check2()
+{
+ pos2=part1.indexOf("@");
+ ext2=part1.slice(pos2)
+ if(ext2=="")
+ {
+    document.getElementById("label4").innerHTML="invalid email";
+ }
+  else
+ {
+  check3();
+ }
+}
+function checkme()
+{
+
+ email=document.form1.text3.value;
+
+ pos1=email.indexOf(".");
+ ext1=email.slice(pos1);
+ part1=email.slice(0,pos1);
+ le=ext1.length;
+ if(le<3)
+  {
+   document.getElementById("label4").innerHTML="invalid email";
+  }
+else
+{
+ check2();
+
+}
+}
+
+function passcheck()
+{
+ pname=document.form1.text2.value;
+ pl=pname.length;
+ if(pl<6)
+ {
+  document.getElementById("label3").innerHTML="weak password strength";
+ }
+ else
+ {
+  checkme();
+ }
+}
+function submitme()
+{
+ fname=document.form1.text1.value;
+
+ fl=fname.length;
+
+
+ 
+ if(fl<6)
+ {
+   document.getElementById("label2").innerHTML="name must be atleast 6 characters";
+ }
+  else
+  {
+   passcheck();
+  }
+}
+
+</script>
+</head>
+<body>
+<form name="form1">
+<label id="label1">Enter name:</label><input type="text"name="text1">
+<label id="label2" class="redlabel"></label><br>
+Enter password:<input type="text"name="text2">
+<label id="label3"class="redlabel"></label><br>
+Enter email id:<input type="text"name="text3">
+<label id="label4"class="redlabel"></label><br>
+Gender:<input type="radio"name="gender"id="male">male
+       <input type="radio"name="gender"id="female">female
+<label id="label5"class="redlabel"></label><br>
+Hobbies<select name="hobbies"id="sel">
+       <option value="r">reading
+       <option value="m">music
+       <option value="t">travelling
+      </select>
+<label id="label6"class="redlabel"></label><br>
+Languages known<br>
+english<input type="checkbox"name="language"id="lang1">
+malayalam<input type="checkbox"name="language"id="lang2">
+hindi<input type="checkbox"name="language"id="lang3">
+<label id="label7"class="redlabel"></label><br>
+<input type="button" onclick="submitme()" value="Submit"/>
+<label id="label8"class="redlabel"></label><br>
+ 
+</form>
+</body>
+</html>

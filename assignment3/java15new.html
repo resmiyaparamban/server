@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>employee</title>
+</head>
+<body>
+<form name="form1">
+
+<p id="demo"></p>
+<input type="button"onclick="entry()"value="data entry">
+<select id="sel">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+</select>
+<input type="button"onclick="addtotable()"value="table entry">
+<input type="button"onclick="removerow()"value="remove">
+<table  border=1 id="table1">
+ <tr>
+  <th>Employee id</th>
+  <th>Name</th>
+  <th>Designation</th>
+ </tr>
+ 
+</table>
+<script>
+var emp,d,option,option2,option3;
+function entry()
+{
+ emp=new Array(3);
+ 
+
+ for(i=0;i<3;i++)
+{
+   emp[i]=new Array(3);
+}
+
+  emp[0][0]="1";
+  emp[0][1]="ram";
+  emp[0][2]="GM";
+  emp[1][0]="2";
+  emp[1][1]="raj";
+  emp[1][2]="manager";
+  emp[2][0]="3";
+  emp[2][1]="Sunil";
+  emp[2][2]="accountant"
+
+ 
+}
+function addtotable()
+{
+
+var id=document.form1.sel.value;
+var s=parseInt(id-1);
+var nid=emp[s][0];
+var nname=emp[s][1];
+var ndes=emp[s][2];
+
+
+var table=document.getElementById("table1");
+var row=table.insertRow(-1);
+var cell1=row.insertCell(0);
+var cell2=row.insertCell(1);
+var cell3=row.insertCell(2);
+cell1.innerHTML=nid;
+cell2.innerHTML=nname;
+cell3.innerHTML=ndes;
+
+}
+function removerow()
+{
+ var rid=document.form1.sel.value;
+ var g=parseInt(rid-1);
+ var c=document.getElementById("table1").rows.length;
+
+ document.getElementById("table1").deleteRow(-1);
+}
+</script>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+ <head>
+  <title>stringlength</title>
+ </head>
+ <body>
+   <form name="form1">
+   <input type="text" name="string1">
+  <button onclick="strlen()">click me</button>
+  
+  <p>length of string is</p>
+  <p id="demo">
+  <script>
+  var l=0;
+  function strlen()
+  {
+  var fname=document.form1.string1.value;
+  l=fname.length;
+  document.getElementById("demo").innerHTML=l;
+ 
+}
+  </script>
+</form>
+ </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+ <head>
+ <title>year</title>
+ </head>
+ <body>
+
+ <script>
+ var a,b,m,r,i,q,s=0;
+ var d=new Date();
+ a=d.getDate();
+ b=d.getMonth();
+ 
+ var m=[31,29,31,30,31,31,31,31,30,31,30,31];
+ for(i=0;i<b;i++)
+ {
+  s=s+m[i];
+ }
+
+ q=s+a;
+ r=366-q;
+ alert(r);
+ </script>
+ </body>
+</html> 
