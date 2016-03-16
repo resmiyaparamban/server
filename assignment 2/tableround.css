@@ -1,0 +1,11 @@
+
+table
+{
+ border-radius:10px;
+
+}
+table,td,th
+{
+ border:2px solid black;
+}
+ 

@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>sublisthover</title>
+    <style>
+     .maincourse
+      {
+        position: relative;
+        display:inline-block;
+       }
+      .maincourse-content
+       {
+         display: none;
+         position: absolute;
+         background-color: #f9f9f9;
+         min-width: 160px;
+         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+         padding: 12px,16px;
+
+       }
+     .dessert
+      {
+        position:relative;
+        display:inline-block;
+      }
+     .dessert-content
+      {
+       display: none;
+       position:absolute;
+       background-color:#f9f9f9;
+       min-width: 160px;
+      }
+      .maincourse:hover  .maincourse-content
+      {
+        display:block;
+      }
+      .dessert:hover  .dessert-content
+      {
+        display:block;
+      }
+
+          
+    </style>
+  </head>
+  <body>
+   <div class="maincourse">
+    <span>maincourse</span>
+    <ol>
+     <div class="maincourse-content">
+      <ol>
+       <li>fried rice</li>
+       <li>naan</li>
+       <li>roti</li>
+      </ol>
+     </div>
+    </div>
+    <div class="dessert">
+     <span>dessert</span>
+      <div class="dessert-content">
+
+     <ol>
+       <li>ice cream</li>
+       <li>juice</li>
+     </ol>
+    </ol>
+     </div>
+  </div>
+  
+    
+</body>
+</html>
