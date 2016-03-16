@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>facebook</title>
+ <style>
+</style>
+<link href="newface.css"rel="stylesheet"type="text/css">
+</head>
+<body>
+<form name="form1">
+<div id="color">
+<table align="right">
+<tr>
+<td class="fcolor">Email or phone</td>
+<td class="fcolor">Password</td>
+</tr>
+<tr>
+<td><input type="text" id="em1"></td>
+<td><input type="text" id="pass1"></td>
+<td><button id="bcolor"onclick="signincheck()">Log In</button></td>
+</tr>
+<tr>
+<td class="x"><input type="checkbox">keep me logged in</td>
+<td ><a href="#abc"class="x">forgotten ur password?</a></td>
+</tr>
+</table>
+<h1 class="fcolor" class="mar">facebook</h1>
+</div>
+<div id="divcol">
+<table align="right">
+<tr>
+<th id="mar1">Create an account</th>
+</tr>
+<tr>
+<th class="mar2">Its free and always will be</th>
+</tr>
+<tr>
+<td><input type="table" value="first Name"class="tab"id="fname">
+<input type="table" value="sur Name"class="tab"id="sname"></td>
+</tr>
+<tr><td><input type="table"class="w"value="Email"id="fname"></td></tr>
+<tr><td><input type="table"value="Mobile Number"class="w"></td></tr>
+<tr><td><input type="table"value="New Password"class="w"></td></tr>
+<tr><th class="mar2">Birthday</th></tr>
+<tr><td><input type="date"></td><td><a href="#ab"class="z"id="leftal">why do i need to provide my<br>date of birth?</a></td></tr>
+<tr><td><input type="radio"name="gender">male<input type="radio"name="gender">female</td></tr>
+<tr><td>By clicking create an account,you agree to our<a href="#ter">terms</a>and that<br>you have read our<a href="#d">Data policy</a>,including our <a href="#c">cookie use</a><td></tr>
+<tr><td><button id="gr"onclick="createemail()">Create an Account</button></td></tr>
+</table>
+<h3 id="focolor"class="mar">facebook helps you connect and share with the<br>people in your life</h3>
+<img src="newimage.png">
+</div>
+</form>
+<script>
+var pname,pl,ext3,part1,pos2,len,ext2,pos1,e1,ext1,le,l,a,fl,fname;
+function createemail()
+{
+  fname=document.getElementById("fname").value;
+ fl=fname.length;
+ if(fl<6)
+ {
+   alert("name should be atleast 6 characters");
+ }
+}
+function checkpass()
+{
+ pname=document.getElementById("pass1").value;
+ 
+ pl=pname.length;
+ if(pl<6)
+ {
+  alert("weak password strength")
+ }
+}
+
+function check3()
+{
+ ext3=part1.slice(0,pos2);
+      len=ext3.length;
+      if(len<6)
+      {
+       alert("invalid");
+      }
+      else
+      {
+       checkpass();
+      }
+}
+
+function check2()
+{
+ pos2=part1.indexOf("@");
+ ext2=part1.slice(pos2)
+ 
+ if(ext2=="")
+ {
+   alert("invalid");
+ }
+  else
+ {
+  check3();
+ }
+}
+
+function checkemail()
+{
+
+
+ pos1=e1.indexOf(".");
+ ext1=e1.slice(pos1);
+ part1=e1.slice(0,pos1);
+ le=ext1.length;
+ if(le<3)
+  {
+   alert("invalid")
+  }
+else
+{
+ check2();
+
+}
+
+}
+function checkmob()
+{
+ l=e1.length;
+ if(l<10)
+ alert("mobile number must have a minimum of 10 digits")
+ else
+ checkpass();
+}
+function signincheck()
+{
+ e1=document.getElementById("em1").value;
+ a=parseInt(e1);
+ if(isNaN(a)==false)
+ checkmob();
+ else
+ checkemail();
+ 
+}
+</script>
+</body>
+</html>
