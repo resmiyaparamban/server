@@ -1,0 +1,8 @@
+<html>
+<head>
+<title>page2</title>
+<body>
+<a href="link1.html">click here for 1st page</a>
+</body>
+</head>
+</html>

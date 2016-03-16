@@ -1,0 +1,69 @@
+html>
+<head>
+<title>toc</title>
+ <body>
+  <h1>Table of contents</h1>
+  <table border=3>
+    <tr>
+     <th id="tsteps"><a href="#steps">steps in creating software</a></th>
+     
+     </tr>
+    <tr>
+     <th><a href="#req">requirement</a></th>
+      </tr>
+     <tr>
+      <th><a href="#des">software design</a></th>
+     </tr>
+     <tr>
+     <th id="ttools"><a href="#tools">tools</a></th>
+     </tr>
+    <tr>
+     <th><a href="#flow">flow chart</a></th>
+      </tr>
+     <tr>
+      <th><a href="#uml">uml diagram</a></th>
+     </tr>
+     <tr>
+     <th id="tdevt"><a href="#devt">software development</a></th>
+     </tr>
+    <tr>
+     <th><a href="#cod">coding</a></th>
+      </tr>
+     <tr>
+      <th><a href="#fix">fixing bugs</a></th>
+     </tr>
+
+
+  </table>
+   
+   
+   <h2 id="steps">steps in creating software</h2>
+   <h4><a href="#tsteps">back to table</a></h4>
+      <p>Software engineering is a field of engineering, for designing and writing programs for computers or other electronic devices. A software engineer, or programmer, writes software (or changes existing software) and compiles software using methods that make it better quality. Better quality software is easier to use, and the code is easier to understand, to maintain, and to add new features.</p>
+   <h3 id="req">Requirements</h3>
+      <p>Requirements say what the software should do.</p>
+
+    <h3 id="des">Software Design</h3>
+      <p>Software design is usually done on paper. It says what the different parts of the software are, and how they talk to each other.</p>
+
+
+    <h2 id="tool">Tools used in creating software</h2>
+    <h4><a href="#ttools">back to table</a></h4>
+
+      <p>Software engineers use many tools and practices in making software. Some of the most common are:</p>
+   <h3 id="flow">Flowcharts</h3>
+      <p>A flow chart is a type of diagram, made of boxes and arrows..</p>
+
+    <h3 id="uml">UML Diagram</h3>
+      <p>The Unified Modeling Language (UML) is a general-purpose, developmental, modeling language in the field of software engineering, that is intended to provide a standard way to visualize the design of a system</p>
+    <h2 id="devt">software Development</h2>
+     <h4><a href="#tdevt">back to table</a></h4>
+      <p>Software development is the process of creating a computer software</p>
+   <h3 id="cod">coding the program</h3>
+      <p>Programming is telling a computer how to do certain things by giving it instructions. These instructions are called programs..</p>
+
+    <h3 id="fix">fixing the bugs</h3>
+      <p>A software bug is a problem with the code in a computer program which makes it not work properly. They can cause inconvenience to the user and may make their computer crash or freeze</p>
+ </body>
+</head>
+</html>

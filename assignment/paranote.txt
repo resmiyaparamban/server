@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>paragraph</title>
+<body>
+<p>
+   <h1>paragragh1</h1>
+   <font face="arial">this is my first paragragh.here i would like to share my <u><b>likes</b> and <i>dislikes</i></u></font>
+</p>
+<hr>
+<p>
+<h1>paragragh2</h1>
+    <center>mathematics</center>this is my favourite subject.it has exponents.for eg:x<sup>2</sup>.another is subscript x<sub>2</sub>
+</p>
+<hr>
+<p>
+
+<h1>paragragh3</h1>
+the most worst subject in my school life was <strike>geography</strike>
+
+</p>
+<hr>
+<p>
+<h1>paragraph 4</h1>
+i was interested in extra curicular activities like dance
+
+</p>
+<hr>
+<p>
+<h1>paragragh 5</h1>
+i hate drawing class
+</p>
+</body>
+</head>
+</html>

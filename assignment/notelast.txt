@@ -1,0 +1,68 @@
+<html>
+ <head>
+  <title>facebookloginpage</title>
+ </head>
+  <body>
+   <table width="100%" cellspacing="0">
+   <tr bgcolor="#3b5998">
+    <td width="60%" height="20%"><image src="logo.jpg" width="20%"></td>
+        <td>
+         <input type="text">
+         <input type="text">
+         <input type="button"value="login">
+      </td>
+     </tr>
+      <tr>
+<td>
+       <table>
+
+          <tr bgcolor="#edf0f5">
+       
+            <th>connect with friends and the world around you on facebook</th>
+           </tr>
+           <tr>
+            <td><font face="bold">see photos and updates from friends in newsfeed<br><br><br>
+           
+                                  share what's new in your life on your timeline<br><br><br>
+           
+           
+                                  find more of what you are looking for in gragh search</font>
+           
+           </td>
+           </tr>
+        </table>
+</td>
+<td>
+ 
+         
+         <table>
+
+           
+        <tr>
+          <td valign="top"align="center"></td>
+         <h1>sign up</h1>
+        </tr>
+        <tr>   
+         <td>
+            <input type="text" placeholder="first name">
+             <input type="text"placeholder="last name ">
+          </td>
+        </tr>
+        <tr>
+         <td><input type="text" placeholder="mobile number"></td>
+        </tr>
+        <tr>
+         <td><input type="text" placeholder="email"></td>
+        </tr>
+        <tr>
+         <td><input type="text"placeholder="password" ></td>
+        </tr>
+        
+        
+
+        </table>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,7 @@
+html>
+ <head>
+  <title>bgcolor</title>
+  <body background="DSC02203.jpg">
+   </body>
+ </head>
+</html>

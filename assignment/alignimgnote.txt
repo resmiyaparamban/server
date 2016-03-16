@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>alignmentimage</title>
+</head>
+<body>
+<img src="aqua.jpg" width="10%"align="right">
+<img src="aqua.jpg" width="10%"align="left">
+<center><img src="aqua.jpg" width="20%"></center>
+</body>
+</html>
